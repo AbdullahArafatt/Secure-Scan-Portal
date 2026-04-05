@@ -25,12 +25,12 @@ export default function SecureStorage() {
               <span className="text-[hsl(213,72%,75%)] font-medium">Secure Data Storage</span>
             </div>
             <h1 id="storage-heading" className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-              Enterprise Secure Document Storage with Military-Grade Encryption
+              Secure Document Storage with AES-256 Encryption
             </h1>
             <p className="text-white/80 text-lg leading-relaxed mb-8">
               Plan2Scan's secure data storage platform protects your digitized documents with AES-256
-              encryption, role-based access controls, and SOC 2 Type II compliant infrastructure —
-              meeting the strictest requirements in healthcare, finance, and government.
+              encryption and role-based access controls — keeping sensitive records safe and accessible
+              only to the right people.
             </p>
             <Link
               href="/get-a-quote"

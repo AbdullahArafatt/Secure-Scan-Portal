@@ -262,7 +262,7 @@ function BlogList() {
   );
 }
 
-function BlogPost({ slug }: { slug: string }) {
+function BlogPost({ slug }) {
   const post = posts.find((p) => p.slug === slug);
 
   useEffect(() => {

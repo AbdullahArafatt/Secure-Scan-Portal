@@ -17,7 +17,7 @@ const navLinks = [
   { href: "/get-a-quote", label: "Get a Quote" },
 ];
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function Layout({ children }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [location] = useLocation();
@@ -89,7 +89,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               ) : (
                 <Link
                   key={link.href}
-                  href={link.href!}
+                  href={link.href}
                   className={`px-3 py-2 rounded text-sm font-medium transition-colors ${
                     location === link.href
                       ? "bg-white/15 text-white"
@@ -194,7 +194,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <li><Link href="/blog" className="hover:text-white transition-colors">Blog & Resources</Link></li>
               <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Security</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Certifications</a></li>
             </ul>
           </div>
         </div>

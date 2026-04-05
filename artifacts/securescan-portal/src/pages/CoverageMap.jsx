@@ -71,7 +71,7 @@ export default function CoverageMap() {
     document.title = "Service Coverage | Nationwide Document Scanning | Plan2Scan";
   }, []);
 
-  const [activeRegion, setActiveRegion] = useState<(typeof regions)[0] | null>(null);
+  const [activeRegion, setActiveRegion] = useState(null);
 
   return (
     <>
@@ -128,21 +128,13 @@ export default function CoverageMap() {
                 role="img"
               >
                 {/* Simplified US outline blocks representing regions */}
-                {/* Pacific Coast */}
                 <rect x="2" y="10" width="18" height="45" rx="2" fill="hsl(218,60%,32%)" />
-                {/* Mountain West */}
                 <rect x="22" y="10" width="20" height="45" rx="2" fill="hsl(218,60%,32%)" />
-                {/* Midwest */}
                 <rect x="44" y="10" width="22" height="35" rx="2" fill="hsl(218,60%,32%)" />
-                {/* South/TX */}
                 <rect x="32" y="45" width="28" height="18" rx="2" fill="hsl(218,60%,32%)" />
-                {/* Mid-Atlantic/SE */}
                 <rect x="60" y="28" width="16" height="30" rx="2" fill="hsl(218,60%,32%)" />
-                {/* Northeast */}
                 <rect x="68" y="8" width="14" height="22" rx="2" fill="hsl(218,60%,32%)" />
-                {/* Alaska hint */}
                 <rect x="2" y="58" width="10" height="6" rx="1" fill="hsl(218,55%,28%)" />
-                {/* Hawaii hint */}
                 <rect x="14" y="58" width="8" height="6" rx="1" fill="hsl(218,55%,28%)" />
 
                 {/* Region dots */}
@@ -253,7 +245,7 @@ export default function CoverageMap() {
                       {region.coverage}
                     </div>
                   </div>
-                  <div className={`flex flex-wrap gap-1 mt-3`}>
+                  <div className="flex flex-wrap gap-1 mt-3">
                     {region.states.slice(0, 6).map((s) => (
                       <span key={s} className={`text-xs px-1.5 py-0.5 rounded font-mono ${
                         activeRegion?.name === region.name ? "bg-white/10 text-white/80" : "bg-muted text-muted-foreground"
@@ -273,7 +265,7 @@ export default function CoverageMap() {
             <div className="mt-8 bg-[hsl(218,72%,22%)] rounded-xl p-6 text-white">
               <h3 className="font-bold mb-3">Need On-Site Service?</h3>
               <p className="text-white/70 text-sm mb-4">
-                Our logistics team schedules secure document pickups anywhere in the contiguous US within 48 hours.
+                Our logistics team schedules secure document pickups anywhere in the contiguous US.
               </p>
               <a href="tel:+18005550100" className="flex items-center gap-2 text-[hsl(213,72%,70%)] font-semibold text-sm mb-4 hover:text-white transition-colors" data-testid="link-phone">
                 <Phone className="w-4 h-4" aria-hidden="true" />
@@ -296,7 +288,7 @@ export default function CoverageMap() {
             { icon: CheckCircle, title: "Chain of Custody", desc: "Every document tracked from client pickup through secure delivery — verified at each handoff." },
             { icon: MapPin, title: "Local Logistics", desc: "Regional offices minimize document transit distance, reducing risk and turnaround time." },
             { icon: Phone, title: "Dedicated Support", desc: "Each region has a dedicated support line staffed by locally knowledgeable account specialists." },
-            { icon: ArrowRight, title: "Same-Day Rush", desc: "42 cities offer same-day or next-day pickup scheduling for urgent digitization needs." },
+            { icon: ArrowRight, title: "Rush Processing", desc: "Select regions offer expedited pickup scheduling for urgent digitization needs." },
           ].map((item) => (
             <div key={item.title} className="bg-card border border-card-border rounded-xl p-6">
               <item.icon className="w-6 h-6 text-[hsl(218,72%,35%)] mb-4" aria-hidden="true" />

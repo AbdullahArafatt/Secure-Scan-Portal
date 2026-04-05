@@ -60,7 +60,7 @@ export default function OCR() {
             <p className="text-muted-foreground leading-relaxed mb-4">
               Plan2Scan uses AI-enhanced OCR engines trained on millions of business document types —
               including invoices, legal contracts, medical records, engineering drawings, and handwritten
-              forms — delivering industry-leading recognition accuracy across diverse document formats.
+              forms — delivering high recognition accuracy across diverse document formats.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-6">
               The output of our OCR process is a fully searchable PDF (PDF-A or PDF/UA for accessibility),

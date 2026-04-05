@@ -2,17 +2,9 @@ import { useState, useEffect } from "react";
 import { Calculator, CheckCircle, ArrowRight, DollarSign, Box, Building } from "lucide-react";
 
 function SavingsCalculator() {
-  const [boxes, setBoxes] = useState<number>(10);
-  const [industryFactor, setIndustryFactor] = useState<number>(1.0);
-  const [results, setResults] = useState<{
-    sqFtSaved: number;
-    annualStorageCost: number;
-    digitizationCost: number;
-    fiveYearSavings: number;
-    breakEvenMonths: number;
-    co2Saved: number;
-  } | null>(null);
-  const [submitted, setSubmitted] = useState(false);
+  const [boxes, setBoxes] = useState(10);
+  const [industryFactor, setIndustryFactor] = useState(1.0);
+  const [results, setResults] = useState(null);
 
   const PAGES_PER_BOX = 2500;
   const SQ_FT_PER_BOX = 1.5;
@@ -228,7 +220,7 @@ export default function GetAQuote() {
   });
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setSubmitted(true);
   };

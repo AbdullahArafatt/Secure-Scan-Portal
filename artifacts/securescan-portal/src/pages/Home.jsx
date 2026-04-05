@@ -1,10 +1,9 @@
 import { Link } from "wouter";
-import { Shield, Archive, FileSearch, ChevronRight, CheckCircle, Users, FileText, Star, ArrowRight } from "lucide-react";
+import { Shield, Archive, FileSearch, ChevronRight, CheckCircle, FileText, Star, ArrowRight } from "lucide-react";
 
 export default function Home() {
   return (
     <>
-      {/* SEO meta via document title - set in App.tsx */}
       {/* Hero Section */}
       <section className="bg-[hsl(218,72%,22%)] text-white relative overflow-hidden" aria-labelledby="hero-heading">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,hsl(213,72%,35%,0.4),transparent_60%)]" aria-hidden="true" />
@@ -19,8 +18,8 @@ export default function Home() {
               <span className="text-[hsl(213,72%,70%)]">for Modern Business</span>
             </h1>
             <p className="text-lg md:text-xl text-white/80 mb-8 leading-relaxed">
-              Plan2Scan delivers enterprise-grade B2B scanning services, OCR processing, and secure data storage
-              solutions that transform paper archives into searchable, protected digital assets.
+              Plan2Scan delivers B2B scanning services, OCR processing, and secure data storage
+              solutions that transform paper archives into searchable, protected digital files.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
@@ -40,7 +39,7 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Trust badges */}
+            {/* Key attributes */}
             <div className="flex flex-wrap gap-6 mt-12 pt-8 border-t border-white/15">
               {[
                 { label: "Documents Processed", value: "Fast" },
@@ -138,11 +137,11 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
               <h2 id="why-heading" className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Why Enterprises Choose Plan2Scan for Secure Document Digitization
+                Why Businesses Choose Plan2Scan for Secure Document Digitization
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                Since 2008, Plan2Scan has been the trusted partner for organizations in healthcare, legal, finance,
-                and government sectors seeking reliable B2B scanning services with uncompromising data security.
+                Plan2Scan is the trusted partner for organizations in healthcare, legal, finance,
+                and government sectors seeking reliable B2B scanning services with solid data security.
               </p>
               <div className="space-y-5">
                 {[
@@ -152,11 +151,11 @@ export default function Home() {
                   },
                   {
                     title: "Long-Term Digital Archiving",
-                    desc: "Meet federal records management standards with our certified archival processes.",
+                    desc: "Structured retention policies keep your records organized for the long haul.",
                   },
                   {
-                    title: "Same-Day Rush Processing",
-                    desc: "Critical document batches digitized and delivered within 24 hours.",
+                    title: "Rush Processing Available",
+                    desc: "Need documents quickly? Ask about our expedited turnaround options.",
                   },
                   {
                     title: "Dedicated Account Management",
