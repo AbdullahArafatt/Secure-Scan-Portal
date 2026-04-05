@@ -52,14 +52,10 @@ export default function SecureStorage() {
           </p>
           <div className="flex flex-wrap justify-center gap-6">
             {[
-              "SOC 2 Type II",
-              "ISO 27001",
               "HIPAA Compliant",
               "GDPR Ready",
-              "FISMA Moderate",
-              "PCI-DSS Level 1",
-              "NARA Compliant",
-              "FERPA Compliant",
+              "AES-256 Encrypted",
+              "Audit Logging",
             ].map((cert) => (
               <div
                 key={cert}
@@ -91,8 +87,8 @@ export default function SecureStorage() {
               {
                 icon: Lock,
                 title: "AES-256 Encryption",
-                desc: "Documents encrypted at rest and in transit using AES-256-GCM. Each client's data uses unique encryption keys managed via FIPS 140-2 validated HSMs.",
-                features: ["Encryption at rest", "TLS 1.3 in transit", "Customer-managed keys", "Key rotation policy"],
+                desc: "Documents are encrypted both at rest and in transit using AES-256 encryption. Each client's data is kept in its own isolated storage with access tightly controlled.",
+                features: ["Encryption at rest", "Encrypted transfers", "Per-client isolation", "Regular key rotation"],
                 testId: "feature-encryption",
               },
               {
@@ -105,29 +101,29 @@ export default function SecureStorage() {
               {
                 icon: RefreshCw,
                 title: "Disaster Recovery & Uptime",
-                desc: "Geo-redundant storage across three availability zones with automatic failover. 99.99% uptime SLA backed by real-time replication and 4-hour RTO.",
-                features: ["99.99% SLA", "Geo-redundant storage", "Automated backups", "4-hour RTO"],
+                desc: "Files are backed up across multiple locations so your data is safe even if one server goes down. Regular automated backups ensure nothing gets lost.",
+                features: ["Multiple backup locations", "Automated backups", "Fast recovery", "High availability"],
                 testId: "feature-recovery",
               },
               {
                 icon: Server,
                 title: "Physical Data Center Security",
-                desc: "Tier IV data centers with biometric access, 24/7 video surveillance, mantrap entries, and armed security. SSAE 18 SOC 2 audited facilities.",
-                features: ["Biometric access", "24/7 surveillance", "Mantrap entry", "SSAE 18 audited"],
+                desc: "Secure data centres with restricted access, 24/7 monitoring, and video surveillance. Only authorised staff can physically access the servers where your data is stored.",
+                features: ["Restricted access", "24/7 monitoring", "Video surveillance", "Regularly audited"],
                 testId: "feature-physical",
               },
               {
                 icon: Shield,
                 title: "Compliance Monitoring",
-                desc: "Automated compliance scans, vulnerability assessments, and penetration testing. Real-time alerting for policy violations, unusual access patterns, and potential threats.",
-                features: ["Automated scans", "Pen testing", "SIEM integration", "Incident response SLA"],
+                desc: "Regular security scans and vulnerability checks to keep the platform up to date. Alerts are triggered for any unusual access patterns or policy violations.",
+                features: ["Regular security scans", "Vulnerability checks", "Access alerts", "Incident response"],
                 testId: "feature-compliance",
               },
               {
                 icon: CheckCircle,
                 title: "Document Lifecycle Management",
-                desc: "Configurable retention policies with automated disposition workflows. Legal hold capabilities for litigation support. NARA-compliant records scheduling.",
-                features: ["Retention policies", "Legal hold", "Auto-disposition", "NARA schedules"],
+                desc: "Set how long documents are kept and have them automatically removed when no longer needed. Useful for organisations that need to follow specific records retention rules.",
+                features: ["Retention policies", "Legal hold support", "Auto-deletion", "Audit trail"],
                 testId: "feature-lifecycle",
               },
             ].map((feat) => (

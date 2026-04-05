@@ -78,7 +78,7 @@ const posts = [
 </p>
 <p>
   <strong>Secure data storage</strong> with geo-redundant backups ensures your records survive any local disaster.
-  Leading document management providers maintain 99.99% uptime SLAs with automatic failover across multiple
+  Good document management platforms are designed for high availability, with automatic failover across multiple
   geographically separated data centers — providing resilience that no physical storage facility can match.
 </p>
 

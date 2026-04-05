@@ -36,14 +36,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       {/* Top bar */}
       <div className="bg-[hsl(218,72%,15%)] text-white/80 text-xs py-2 hidden md:block">
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-          <span>Trusted B2B secure document digitization since 2008</span>
+          <span>Helping businesses go paperless — securely and efficiently</span>
           <span>
-            <a href="tel:+18005550100" className="hover:text-white transition-colors">
-              1-800-555-0100
-            </a>
-            {" | "}
-            <a href="mailto:info@plan2scan.com" className="hover:text-white transition-colors">
-              info@plan2scan.com
+            <a href="mailto:contact@plan2scan.com" className="hover:text-white transition-colors">
+              contact@plan2scan.com
             </a>
           </span>
         </div>
@@ -177,11 +173,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <span className="font-bold text-white text-lg">Plan2Scan</span>
             </div>
             <p className="text-sm leading-relaxed mb-4">
-              Plan2Scan is a leading provider of secure document digitization and B2B scanning services.
-              We help organizations of all sizes transform paper-based workflows into efficient digital processes.
-            </p>
-            <p className="text-xs text-white/50">
-              ISO 9001 Certified &middot; SOC 2 Type II Compliant &middot; HIPAA Ready
+              Plan2Scan helps organisations of all sizes move away from paper-based workflows.
+              From bulk scanning to secure digital storage, we make document digitisation straightforward.
             </p>
           </div>
 

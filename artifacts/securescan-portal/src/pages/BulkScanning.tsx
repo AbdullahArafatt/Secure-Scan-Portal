@@ -29,8 +29,8 @@ export default function BulkScanning() {
             </h1>
             <p className="text-white/80 text-lg leading-relaxed mb-8">
               Convert massive paper archives to fully searchable digital files with our industrial-grade
-              bulk document scanning service. Plan2Scan processes up to 100,000 pages per day with
-              99.97% capture accuracy and complete chain-of-custody tracking.
+              bulk document scanning service. Plan2Scan handles high-volume scanning projects with
+              consistent quality, fast turnaround, and complete chain-of-custody tracking.
             </p>
             <Link
               href="/get-a-quote"
@@ -48,10 +48,10 @@ export default function BulkScanning() {
       <section className="bg-[hsl(218,72%,18%)] text-white py-8" aria-label="Key statistics">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
-            { value: "100,000", label: "Pages/Day Capacity", testId: "stat-pages" },
-            { value: "99.97%", label: "Capture Accuracy", testId: "stat-accuracy" },
-            { value: "200+", label: "Document Formats", testId: "stat-formats" },
-            { value: "24hr", label: "Rush Processing", testId: "stat-rush" },
+            { value: "High", label: "Daily Capacity", testId: "stat-pages" },
+            { value: "Excellent", label: "Capture Quality", testId: "stat-accuracy" },
+            { value: "Wide", label: "Format Support", testId: "stat-formats" },
+            { value: "Rush", label: "Processing Available", testId: "stat-rush" },
           ].map((s) => (
             <div key={s.label} className="text-center" data-testid={s.testId}>
               <div className="text-3xl font-bold text-[hsl(213,72%,70%)]">{s.value}</div>

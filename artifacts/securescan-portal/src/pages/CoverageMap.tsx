@@ -60,10 +60,10 @@ const regions = [
 ];
 
 const stats = [
-  { label: "States Covered", value: "50" },
-  { label: "Service Centers", value: "18" },
-  { label: "Same-Day Pickup Cities", value: "42" },
-  { label: "Avg. Transit Time", value: "< 48hrs" },
+  { label: "Coverage", value: "Nationwide" },
+  { label: "Regional Offices", value: "Multiple" },
+  { label: "Pickup Available", value: "On-Site" },
+  { label: "Avg. Transit Time", value: "2–5 days" },
 ];
 
 export default function CoverageMap() {
@@ -94,9 +94,8 @@ export default function CoverageMap() {
               Nationwide Secure Document Scanning Coverage
             </h1>
             <p className="text-white/80 text-lg leading-relaxed">
-              Plan2Scan operates 18 service centers across all 50 states, providing on-site document
-              pickup, secure transport, and processing within tight SLA windows — wherever your
-              records are located.
+              Plan2Scan provides coverage across all major US regions, with on-site document pickup,
+              secure transport, and processing available nationwide — wherever your records are located.
             </p>
           </div>
         </div>

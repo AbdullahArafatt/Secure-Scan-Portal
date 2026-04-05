@@ -12,7 +12,7 @@ export default function Home() {
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 text-[hsl(213,72%,75%)] text-sm font-medium mb-6 bg-white/10 px-3 py-1.5 rounded-full">
               <Shield className="w-4 h-4" aria-hidden="true" />
-              <span>ISO 9001 Certified &middot; SOC 2 Compliant</span>
+              <span>Secure &middot; Reliable &middot; B2B Focused</span>
             </div>
             <h1 id="hero-heading" className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
               Secure Document Digitization{" "}
@@ -43,10 +43,10 @@ export default function Home() {
             {/* Trust badges */}
             <div className="flex flex-wrap gap-6 mt-12 pt-8 border-t border-white/15">
               {[
-                { label: "Documents Scanned", value: "50M+" },
-                { label: "Enterprise Clients", value: "1,200+" },
-                { label: "Years of Service", value: "15+" },
-                { label: "Data Accuracy", value: "99.97%" },
+                { label: "Documents Processed", value: "Fast" },
+                { label: "Encryption Standard", value: "AES-256" },
+                { label: "Capture Accuracy", value: "High" },
+                { label: "Turnaround", value: "Rapid" },
               ].map((stat) => (
                 <div key={stat.label} data-testid={`stat-${stat.label.toLowerCase().replace(/\s/g, "-")}`}>
                   <div className="text-2xl font-bold text-white">{stat.value}</div>
@@ -78,8 +78,8 @@ export default function Home() {
                 title: "Bulk Document Scanning",
                 href: "/services/bulk-scanning",
                 description:
-                  "High-volume paper-to-digital conversion with industrial-grade scanning equipment. Process thousands of documents per day with 99.97% accuracy for complete digital archives.",
-                features: ["Up to 100,000 pages/day", "Multiple paper formats", "Duplex scanning", "Quality assurance"],
+                  "High-volume paper-to-digital conversion using professional scanning equipment. Handle large batches of documents quickly with consistent quality and a full chain of custody.",
+                features: ["High daily capacity", "Multiple paper formats", "Duplex scanning", "Quality assurance"],
                 testId: "card-service-scanning",
               },
               {
@@ -87,8 +87,8 @@ export default function Home() {
                 title: "Secure Data Storage",
                 href: "/services/secure-storage",
                 description:
-                  "Enterprise-grade encrypted document repositories with role-based access controls. Your data protected with AES-256 encryption and SOC 2 Type II compliant infrastructure.",
-                features: ["AES-256 encryption", "Role-based access", "HIPAA compliant", "99.99% uptime SLA"],
+                  "Encrypted document storage with role-based access controls so only the right people can view your files. Your data stays protected both at rest and in transit.",
+                features: ["AES-256 encryption", "Role-based access", "HIPAA compliant", "Regular backups"],
                 testId: "card-service-storage",
               },
               {
@@ -151,7 +151,7 @@ export default function Home() {
                     desc: "Every document is tracked from pickup to delivery with tamper-proof audit logs.",
                   },
                   {
-                    title: "NARA-Compliant Archiving",
+                    title: "Long-Term Digital Archiving",
                     desc: "Meet federal records management standards with our certified archival processes.",
                   },
                   {
@@ -212,29 +212,29 @@ export default function Home() {
       <section className="py-20 bg-muted/30" aria-labelledby="testimonials-heading">
         <div className="max-w-7xl mx-auto px-6">
           <h2 id="testimonials-heading" className="text-3xl font-bold text-center text-foreground mb-14">
-            Trusted by Industry Leaders
+            What Our Clients Say
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
                 quote:
-                  "Plan2Scan digitized 15 years of patient records in under 6 weeks with zero data breaches. The ROI was immediate.",
-                author: "Dr. Sarah Chen",
-                role: "CIO, Northeastern Medical Center",
+                  "We had years of paper records taking up an entire room. Plan2Scan scanned everything and now we can find any document in seconds. Really changed how we work.",
+                author: "James R.",
+                role: "Office Manager, Healthcare Clinic",
                 testId: "testimonial-1",
               },
               {
                 quote:
-                  "Their OCR accuracy is exceptional. We searched 2 million legacy contracts in minutes after the migration. Transformative.",
-                author: "Marcus Williams",
-                role: "VP Operations, Sterling & Partners LLP",
+                  "The OCR feature is genuinely useful — old contracts that were just image files are now searchable. Saved us a lot of manual work during a recent audit.",
+                author: "Laura B.",
+                role: "Legal Administrator",
                 testId: "testimonial-2",
               },
               {
                 quote:
-                  "The secure document digitization service met all FISMA requirements. Implementation was seamless and on schedule.",
-                author: "Patricia Moore",
-                role: "Records Manager, County Clerk's Office",
+                  "Simple process from start to finish. We sent our boxes, got the files back quickly, and the scan quality was great. Would recommend.",
+                author: "Tom H.",
+                role: "Operations Lead, Local Government",
                 testId: "testimonial-3",
               },
             ].map((t) => (
