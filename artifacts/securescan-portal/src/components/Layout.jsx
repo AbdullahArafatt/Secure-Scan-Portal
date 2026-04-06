@@ -37,11 +37,7 @@ export default function Layout({ children }) {
       <div className="bg-[hsl(218,72%,15%)] text-white/80 text-xs py-2 hidden md:block">
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
           <span>Helping businesses go paperless — securely and efficiently</span>
-          <span>
-            <a href="mailto:contact@plan2scan.com" className="hover:text-white transition-colors">
-              contact@plan2scan.com
-            </a>
-          </span>
+          <span>Secure &middot; Reliable &middot; Nationwide</span>
         </div>
       </div>
 
